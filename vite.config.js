@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server:{
   proxy:{
-'/api':'https://ecommerce-letshop-backend.onrender.com',
+'/api':'https://letsshop-backend-6.onrender.com',
 
   },
     
