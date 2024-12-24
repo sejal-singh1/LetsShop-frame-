@@ -1,0 +1,143 @@
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .payment-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .payment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #008000;
+  }
+
+
+  
+  
+  .payment-header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 60px;
+  }
+  
+  .payment-header h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  .amount-section {
+    margin-bottom: 20px;
+    border:1px solid rgb(214, 213, 213);
+  }
+  
+  .amount-section p {
+    color: #555;
+    margin: 2px;
+  }
+  
+  .amount-section h3 {
+    margin: 0;
+    color: #000;
+    font-size: 30px;
+  }
+  
+  .payment-options h4 {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    
+    border: 1px solid rgb(214, 213, 213);
+    margin: 25px;
+  }
+  
+  .option input[type="radio"] {
+    margin: 10px;
+  
+  }
+  .option label {
+    font-size: 16px;
+    color: #333;
+  }
+  .btn{
+    color: white;
+    width:100%;
+    height: 30px;
+    border: 1px solid rgb(214, 213, 213);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #84B8D5;
+    
+  }
+  .btn:hover{
+    background-color: #0c4d6f;
+  }
+  .net-banking-details {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .Cards-details{
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .cards-input-group{
+    margin-bottom: 15px;
+  }
+  .group label{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  .group {
+    margin-bottom: 15px;
+  }
+  
+  .group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  .paymentInput{
+    width: 90%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .paymentInput>div>svg{
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: #000;
+  }
+  .input-group input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  

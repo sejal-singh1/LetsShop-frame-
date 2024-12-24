@@ -1,0 +1,259 @@
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(252, 244, 224); /* Adjust color to match your design */
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: rgb(162, 122, 22);
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: rgb(161, 123, 25);
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(161, 123, 25);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Category Section */
+.categories {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.category-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.category-item {
+  text-align: center;
+}
+
+.category-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.category-item p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Collections Section */
+.collections {
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for the product grid */
+  gap: 20px;
+}
+
+.product-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container{
+  display: flex;
+  margin: 2vmax auto;
+  width:80vw;
+  flex-wrap:wrap;
+  justify-content: center;
+ max-width: 100%; 
+}
+.homeheading{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2vmax;
+border-bottom: 1px solid rgb(245,212,129);
+width: 20vmax;
+padding: 1vmax;
+margin: 5vmax auto;
+
+}
+.productCard{
+  width:20vmax;
+  display:flex;
+  flex-direction:column;
+  text-decoration: none;
+  color: black;
+  margin: 2vmax;
+  transition:all 0.5s;
+  padding-bottom:0.5vmax;
+}
+.productCard>img{
+  width:20vmax;
+
+}
+.productCard>div{
+  margin:0.5vmax;
+  display:flex;
+  justify-content: flex-start;
+
+}
+.productCard>div>span{
+  margin: 0.5vmax;
+  font:300 0.8vmax "Roboto";
+}
+.productCard>p{
+font-family: "Roboto";
+font-size: 1.4vmax;
+margin: 1vmax 0.5vmax;
+margin-bottom: 0;
+}
+.productCard>span{
+  margin: 0.5vmax 0.5vmax;
+  color:goldenrod;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1vmax;
+
+}
+  .productCard:hover{
+    box-shadow: 0 0 5px black;
+    transform: translateY(-1vmax);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  /* General Media Queries for the whole page */
+@media screen and (max-width: 1024px) {
+  /* For tablets and smaller devices */
+  .hero {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    margin-top: 15px;
+    padding: 8px 15px;
+  }
+
+  .hero-image img {
+    margin-top: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-items {
+    flex-direction: column;
+  }
+
+  .category-item img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* For smaller tablets and large phones */
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 7px 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .productCard {
+    width: 40vmax;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* For phones */
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 5px 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .productCard {
+    width: 80vw;
+  }
+
+  .category-items {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .category-item img {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,132 @@
+
+ .productHeading {
+  font-size: 28px; 
+  color: #333; 
+  text-align: center; 
+  margin-top: 30px;
+  margin-bottom: 30px; 
+  font-weight: 500; 
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; 
+  position: relative; 
+  
+}
+
+.productHeading::after {
+  content: ""; 
+  width: 180px; 
+  height: 4px; 
+  background-color: rgb(187, 139, 18); 
+  display: block; 
+  margin: 10px auto 0; 
+  border-radius: 2px; 
+  
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+  min-height: 30vh;
+
+}
+ .paginationBox{
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+/*pagination*/
+.pagination {
+  
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-items {
+   display: inline-block;
+  margin: 0 5px; 
+  background-color: white;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-items:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.page-items:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+ .page-link {
+  
+
+
+  font:300 0.7 "Roboto";
+  color: goldenrod;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+  background-color: rgb(200, 148, 16);
+  color: black;
+}
+
+.pageItemActive .page-link {
+  background-color: rgb(202, 176, 30);
+  color: #fff;
+  border-color: goldenrod;
+} */
+
+.pageLinkItemActive {
+  font-weight: bold;
+} 
+
+/* price filter*/
+.filterBox{
+  width:10vmax;
+  position: absolute;
+  top: 6vmax;
+  left: 4vmax;
+}
+/*CATEGORY PROVIDE*/
+
+.categoriesBox{
+  padding: 0;
+}
+.category-link{
+  list-style: none;
+  color: rgb(173, 129, 17);
+  font: 400 0.9vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover{
+  color: tomato;
+}
+.filterBox>fieldset{
+  border: 2px solid rgb(183, 135, 13);
+}
+@media screen and (max-width: 600px){
+.filterBox{
+  width: 20vmax;
+  position: static;
+  margin: auto;
+}
+.page-link{
+  font :300 1.7vmax "Roboto";
+}
+.category-link{
+  font :400 1.8vmax "Roboto";
+}
+}
+  
+

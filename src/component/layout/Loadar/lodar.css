@@ -1,0 +1,28 @@
+.loading{
+    width:100vw;
+     height: 100vh;
+    background-color: white;
+   display: grid;
+   place-items: center;
+    max-width: 100%; 
+   
+}
+.loading>div{
+/*width:10vmax;
+background-color: goldenrod;
+height: 1vmax;*/
+ /* Light grey */
+border-bottom: 5px solid #181817; /* Yellow */
+border-radius: 50%;
+width: 120px;
+height: 120px;
+animation: spin 800ms linear infinite;
+} 
+@keyframes spin {
+    /* to{
+    transform: rotate(360deg); 
+    } */
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  
+  }

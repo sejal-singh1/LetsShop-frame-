@@ -1,0 +1,202 @@
+.LScontainer{
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../images/shopping.avif')
+  no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top:0%;
+  left:0;
+  border-radius: 5px;
+}
+.LSBox{
+  background:transparent;
+  border: 2px solid rgb(251, 74, 103) ;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width:30vw;
+  height: 70vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.L_S_toggle{
+  display: flex;
+  height: 3vmax;
+
+}
+.L_S_toggle>P{
+  color: white;
+  font: 300 2.1vmax "Roboto";
+  transition: all 0.5s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+   .L_S_toggle>p:hover{
+    background-color: white;
+    color: rgb(241, 143, 160);
+   }
+   .LSBox>div>button{
+    background-color: rgb(219, 12, 46);
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+   }
+   .loginform,
+   .signupform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    transform: all 0.5;
+   }
+   .signupform{
+    transform: translateY(-100%)  translateX(100vmax);
+
+   }
+   .loginform>div,
+   .signupform>div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+   }
+   .loginform>div>input,
+   .signupform>div>input{
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.267);
+    border-radius: 4px;
+   font :300 1.1vmax cursive;
+    outline: none;
+    color: rgb(200, 39, 66);
+   }
+   .loginform>div>svg,
+   .signupform>div>svg{
+    position:absolute;
+    transform: translateX(1vmax);
+    font-size: 1.7vmax;
+    color: rgba(0,0,0,0.623);
+   }
+   .loginform>a{
+    color: rgb(35, 35, 233);
+    text-decoration: none; 
+     align-self:flex-end ;
+    transition: all 0.5;
+    font: 500 1.7vmax "Gill Sans";
+   }
+   .loginform>a:hover{
+    outline: underline;
+   }
+   #registerImage>img{
+    width: 3vmax;
+    border-radius: 100%;
+    
+   }
+   #registerImage>input{
+    display: flex;
+    padding: 0%;
+   }
+#registerImage>input::file-selector-button{
+  cursor: pointer;
+  width: 100%;
+  z-index: Z;
+  height: 4vh;
+  margin: 0%;
+  border: none;
+  margin: 0%;
+  font: 400 1vmax cursive;
+  transition: all 0.5s;
+  padding: 0.1vmax;
+  color: rgba(0,0,0,0.623);
+  background-color: rgb(243, 213, 218);
+}
+#registerImage>input::file-selector-button:hover{
+background-color: rgb(232, 23, 93);
+color: white;
+}
+
+.loginBtn,
+.SignupBtn{
+  border: none;
+  background-color: rgb(244, 217, 222);
+  color: rgb(58, 56, 56);
+  font: 300 1.6vmax "Roboto";
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.219);
+}
+.loginBtn:hover,
+.SignupBtn:hover{
+  background-color: rgb(237, 13, 88);
+  color: white;
+}
+.shiftToLeft{
+  transform: translateX(-100%);
+}
+.shiftToNeutral{
+  transform: translateX(0%);
+}
+.shiftToNeutralForm{
+  transform: translateX(0%) translateY(-100%);
+}
+.shiftToRight{
+  transform: translateX(100%);
+} 
+@media screen and (max-width: 600px) {
+  .LSContainer {
+    background-color: white;
+  }
+  .LSBox {
+    width: 100vw;
+    height: 95vh;
+  }
+  .L_S_toggle {
+    height: 5vmax;
+  }
+  .L_S_toggle > p {
+    font: 300 2vmax "Roboto";
+  }
+
+  .loginForm,
+  .signUpForm {
+    padding: 5vmax;
+  }
+
+  .loginForm > div > input,
+  .signUpForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.9vmax cursive;
+  }
+
+  .loginForm > div > svg,
+  .signUpForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  .loginForm > a {
+    font: 500 1.8vmax "Gill Sans";
+  }
+
+  
+  .loginBtn,
+  .signUpBtn {
+    font: 300 1.9vmax "Roboto";
+    padding: 1.8vmax;
+  }
+}
